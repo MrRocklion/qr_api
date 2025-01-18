@@ -6,8 +6,8 @@ class GpiosManager():
         super().__init__()
         GPIO.setmode(GPIO.BCM)
         GPIO.setwarnings(False)
-        self.relay_1 = 3
-        self.relay_2 = 4
+        self.relay_1 = 20
+        self.relay_2 = 21
         # declaracion de salidas
         GPIO.setup(self.relay_1, GPIO.OUT)
         GPIO.setup(self.relay_2, GPIO.OUT)
